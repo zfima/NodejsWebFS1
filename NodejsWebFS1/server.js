@@ -2,14 +2,28 @@
 var http = require('http');
 var fs = require('fs');
 var async1 = require('async');
-var fileName = 'myText.txt';
+var fileNameSrc = 'myText.txt';
+var fileNameBackUp = 'myTextBackUp.txt';
 
 //append file
-fs.appendFile(fileName, Date().toLocaleLowerCase(), (err) =>
+fs.writeFile(fileNameSrc, Date().toLocaleLowerCase(), (err) =>
 {
     if (err) throw err;
     console.log('Saved!');
+
+
+    try
+    {
+        fs.copyFile(fileNameSrc, fileNameBackUp, (err) => {
+            if (err) throw err;
+            console.log('Copied!');
+        });
+    }
+    catch (e) {
+        console.log(e);
+    }
 });
+
 
 http.createServer((req, res) =>
 {
@@ -19,7 +33,7 @@ http.createServer((req, res) =>
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write(data);
         //read 'myText.txt'
-        fs.readFile(fileName, (err, data) => {
+        fs.readFile(fileNameSrc, (err, data) => {
             res.write(data);
             res.end();
         });
