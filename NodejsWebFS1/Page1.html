@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello people!</title>
+</head>
+<body>
+    <input id="checkbox1" type="checkbox" onclick="myFunction()" />
+    <textarea id="textarea1" rows="2" cols="20" style="display:none">Hello people! i am a textarea!</textarea>
+<script>
+    function myFunction() {
+        var checkBox = document.getElementById("checkbox1");
+        var text = document.getElementById("textarea1");
+        if (checkBox.checked == true) {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

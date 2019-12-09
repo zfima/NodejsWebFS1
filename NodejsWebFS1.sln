@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebFS1", "NodejsWebFS1\NodejsWebFS1.njsproj", "{21BF0F2F-F72E-4FDF-BE10-C532537D371C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21BF0F2F-F72E-4FDF-BE10-C532537D371C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BF0F2F-F72E-4FDF-BE10-C532537D371C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BF0F2F-F72E-4FDF-BE10-C532537D371C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BF0F2F-F72E-4FDF-BE10-C532537D371C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25BAD50D-1B61-4BAE-BB9D-9C68A5438258}
+	EndGlobalSection
+EndGlobal

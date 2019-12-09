@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-web-fs1",
+  "version": "0.0.0",
+  "description": "NodejsWebFS1",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "async": "^3.1.0"
+  }
+}
